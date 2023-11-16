@@ -1,6 +1,7 @@
 import { Typography  } from "@mui/material";
 
 const Default =(props)=>{
-    return <Typography>{props.caption}</Typography>
+    const {name,caption,sx, ...other }=props
+    return <Typography {...other}>{caption}</Typography>
 }
 export {Default as Text}
